@@ -1,0 +1,161 @@
+<html>
+
+    <head>
+        <title>cadastro</title>
+    
+        <link type="image/png" rel="icon" href="amongus_imagem/amongus.png">
+        <style type="text/css">
+
+             .paginas {
+                text-align: center;
+                letter-spacing: normal;
+            }
+
+            .comentario {
+                    display: grid;
+                    /*flex-direction: row;*/
+                    grid-template-columns: 100px 75%;
+                    gap: 20px
+
+                }
+
+            .comentario img{
+                height: auto;
+                width: 100px;
+            }
+    
+            p {
+                color: rgb(36, 9, 61);
+                letter-spacing: normal;
+                text-align: justify;
+            } 
+        
+            
+            body {
+                background:linear-gradient(to bottom, rgb(73, 135, 151), rgb(93, 221, 178), rgb(117, 236, 117));
+                color: white;
+                text-align: justify;
+                margin: 0;
+            }
+            fieldset {
+                cursor: url(cursor.png), auto;
+                width: 400px;
+                height: 570px;
+                background-color: #5f93e0;
+                box-shadow: 10px 10px rgba(57, 13, 216, 0.1);
+                margin: auto;
+            }
+
+             h2 {
+                color: #000000;
+                font-family: 'Arial Black', sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                
+            }
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+            input {
+                border-radius: 8px;
+                padding: 10px;
+                margin-top: 5px;
+                border: none;
+
+            }
+            button {
+                display: block;
+                margin: 15px auto 0;
+                padding: 10px 25px;
+                background-color: rgb(51, 2, 2);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }            
+
+            .among:hover {
+                transform: scale(1.1);
+            }
+        
+        </style>
+
+    </head>
+    <body>
+        <p class="paginas"><a href="index.html">Página principal</a> | Cadastro </p>
+        <hr>
+
+        <h2>Cadastro</h2>
+
+        <p>Faça seu <b>cadastro</b> para deixar um comentario e participar da nossa comunidade para deixar um <a href="#Commentarios">comentario</a>
+        quando essa barra encher sera o dia mais feliz da minha vida</p><meter min="0" max="100" value="80" low="50"
+        optimum="120">8.0</meter>
+        
+        <form>
+        <fieldset>
+            
+         <label for="nome">Nome: </label>
+        
+        <input type="text" placeholder="Escreva seu nome">
+
+        <br><br>
+
+        <label for="data">Quando voce nasceu?</label>
+
+        <input id="data" type="date">
+
+        <br><br>
+
+        <label for="sexo">Sexo:</label>
+
+        <input type="radio" id="sexo" name="legal" >Maculino<br> 
+        <input type="radio" id="sexo" name="legal" >Feminino <br> 
+        
+        <br>
+
+        <label for="avatar">Escolha uma foto de perfil:</label>
+
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br>
+        
+
+        <label for="cor">Qual sua cor de amongus preferida:</label><br>
+        <input type="color" name="cor" id="cor" > <br>
+        <br>
+        Deixe um comentario para os outros tripulantes:<br>
+        <textarea name="comentario" id="c"></textarea>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+             
+        </fieldset>
+        <form>
+
+        <br>
+
+        <h2 id = "Commentarios">Comentarios</h2>
+
+        <div class="comentario">
+
+            <img class="among" src="amongus_imagem/amongus.png"50">
+            <p>
+            It's a fun party game with great replay value. The gameplay is a degree of depth but it's all pretty simple. It's got a great graphic design and it's really attractive to new players.
+            </p>
+            <img class="among" src="amongus_imagem/amongus.png" width="50">
+            <p>
+            Hello, it’s me, Crewmate. I am the good guy on the spaceship. I complete all the tasks. My goal is to complete all the tasks before the impostor tries to destroy us..
+            </p>
+            <img class="among" src="amongus_imagem/amongus.png" width="50">
+            <p>
+            This game helped me get a job as a detective. Still looking for the impostor at work though..
+            </p>
+        </div>
+        <br>
+        <h2 >Faça sua festa aqui com o tema Among Us</h2>
+        Este é o endereço.<br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.0257698119821!2d-47.63100722425684!3d-22.724409758388422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631b73b5536e9%3A0xa653860b55d07b56!2sR.%20Saldanha%20Marinho%2C%202452-2550%20-%20Alem%C3%A3es%2C%20Piracicaba%20-%20SP%2C%2013418-395!5e0!3m2!1spt-BR!2sbr!4v1781057446813!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+    </body>
+</html>
